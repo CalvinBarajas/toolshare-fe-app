@@ -44,3 +44,12 @@ code {
   color: #899894;
   padding: .5rem 0;
 }
+
+.listItem {
+  border: 1px solid #5a6274;
+  border-radius: 15px;
+  text-align: left;
+  padding: 1rem;
+  background-color: #61dafb;
+  color: black;
+}

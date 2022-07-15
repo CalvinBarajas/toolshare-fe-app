@@ -9,13 +9,13 @@ const NavigationBar = () => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             ToolShare <Tools className="logoNavbar" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">How It Works</Nav.Link>
+              <Nav.Link href="/howitworks">How It Works</Nav.Link>
               <Nav.Link href="#pricing">Inventory</Nav.Link>
               <NavDropdown title="Categories" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
