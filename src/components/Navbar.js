@@ -10,31 +10,36 @@ const NavigationBar = () => {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
-            ToolShare <Tools className="logoNavbar"/>
+            ToolShare <Tools className="logoNavbar" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
+              <Nav.Link href="#features">How It Works</Nav.Link>
+              <Nav.Link href="#pricing">Inventory</Nav.Link>
+              <NavDropdown title="Categories" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">
+                  Woodworking
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.2">Plumbing</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Welding</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  Electrical
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">
+                  Automotive
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.6">General</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.7">
+                  All Categories
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link href="#deets">Login</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                Signup
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

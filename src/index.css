@@ -12,6 +12,35 @@ code {
     monospace;
 }
 
-.logoNavbar {
+.logoNavbar, .homePageHeader {
   color: #61dafb;
+}
+
+.homeGridImg {
+  border: 1px solid #5a6274;
+  border-radius: 25px;
+  /* image animation on home page */
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+  /* image animation on home page */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.homePageHeader {
+  font-variant: small-caps;
+}
+
+.footer {
+  background-color: #212529;
+  color: #899894;
+  padding: .5rem 0;
 }

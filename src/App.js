@@ -1,22 +1,29 @@
+// import
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './App.css';
-import Navbar from './components/Navbar';
-import Homepage from './components/HomeBody/Homepage';
+// import components
+import Navbar from "./components/Navbar";
+import Homepage from "./components/Homepage/Homepage";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Inventory from "./components/Inventory";
 
 function App() {
   return (
-    <div className="App">
-
-      <Navbar />
-
-      <header className="App-header">
-
-      <Homepage />
-
-
-
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <body className="App-header">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/inventory" element={<Inventory />} />
+          </Routes>
+        </body>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
