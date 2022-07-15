@@ -3,20 +3,21 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Tools } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to="/">
             ToolShare <Tools className="logoNavbar" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/howitworks">How It Works</Nav.Link>
-              <Nav.Link href="#pricing">Inventory</Nav.Link>
+              <Nav.Link as={Link} to="/howitworks">How It Works</Nav.Link>
+              <Nav.Link as={Link} to="/inventory">Inventory</Nav.Link>
               <NavDropdown title="Categories" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Woodworking

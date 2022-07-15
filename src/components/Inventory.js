@@ -4,7 +4,7 @@
 // component
 const Inventory = () => {
   return (<>
-  <h1>Inventory Page...</h1>
+  <h1>Inventory Page....</h1>
   </>);
 }
 
