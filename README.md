@@ -1,7 +1,7 @@
 <h1>ToolShare</h1>
 <p>Toolshare is an app for sharing your personal tools with your friends, family, and neighbors.</p>
 
-<p>Live Site: https://toolshare-calvinbarajas.vercel.app/</p>
+<p>Live Site: https://toolshare-fe-app.vercel.app/</p>
 
 <h2>Stack Used</h2>
 <ul>
